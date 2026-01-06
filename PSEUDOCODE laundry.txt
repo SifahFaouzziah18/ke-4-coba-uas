@@ -1,0 +1,59 @@
+START
+Deklarasi array nama, jenisLaundry, status
+Deklarasi array berat, harga
+Deklarasi jumlahData = 0
+Deklarasi pilihan
+
+DO
+    Tampilkan menu:
+        1. Tambah Data Laundry
+        2. Tampilkan Data Laundry
+        3. Ubah Status Laundry
+        4. Keluar
+    Input pilihan
+
+    IF pilihan == 1 THEN
+        IF jumlahData >= MAX THEN
+            Tampilkan "Data sudah penuh"
+        ELSE
+            Input nama pelanggan
+            Input berat laundry
+            Input jenis laundry
+
+            IF jenis == 1 THEN
+                jenisLaundry = "Cuci"
+                harga = berat * 5000
+            ELSE
+                jenisLaundry = "Cuci + Setrika"
+                harga = berat * 8000
+            ENDIF
+
+            status = "Proses"
+            jumlahData = jumlahData + 1
+        ENDIF
+
+    ELSE IF pilihan == 2 THEN
+        IF jumlahData == 0 THEN
+            Tampilkan "Belum ada data"
+        ELSE
+            FOR i = 0 sampai jumlahData-1
+                Tampilkan nama, berat, jenisLaundry, harga, status
+            ENDFOR
+        ENDIF
+
+    ELSE IF pilihan == 3 THEN
+        Input index data
+        IF index valid THEN
+            status = "Selesai"
+        ELSE
+            Tampilkan "Nomor tidak valid"
+        ENDIF
+
+    ELSE IF pilihan == 4 THEN
+        Tampilkan "Terima kasih"
+    ELSE
+        Tampilkan "Pilihan tidak valid"
+    ENDIF
+WHILE pilihan != 4
+
+END
