@@ -1,0 +1,36 @@
+Mulai
+
+Deklarasi variabel:
+    pilih : integer
+    layanan[2] : string
+    vote[2] : integer
+
+Inisialisasi:
+    layanan[0] ← "Cuci"
+    layanan[1] ← "Cuci + Setrika"
+    vote[0] ← 0
+    vote[1] ← 0
+
+Lakukan perulangan selama pilih ≠ 4
+    Tampilkan judul sistem voting
+    Tampilkan menu layanan laundry
+    Input pilihan user ke variabel pilih
+
+    Jika pilih = 1 maka
+        Tambahkan 1 ke vote[0]
+        Tampilkan pesan berhasil voting layanan Cuci
+    Jika pilih = 2 maka
+        Tambahkan 1 ke vote[1]
+        Tampilkan pesan berhasil voting layanan Cuci + Setrika
+    Jika pilih = 3 maka
+        Tampilkan hasil voting:
+            Tampilkan layanan[0] dan vote[0]
+            Tampilkan layanan[1] dan vote[1]
+    Jika pilih = 4 maka
+        Tampilkan pesan keluar program
+    Jika tidak
+        Tampilkan pesan pilihan tidak valid
+
+Akhiri perulangan
+
+Selesai
